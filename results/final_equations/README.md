@@ -5,9 +5,8 @@ This directory archives four benchmark equation structures from MOT-SR
 
 ## MOT-SR (LLaMA-3.1)
 
-The directory name `mot_sr_llama31` uses lowercase snake_case, consistent
-with Python module naming. Each file exposes the original `equation`
-function interface and retains the executable mathematical structure.
+Each benchmark file provides an `equation` function with a ten-entry
+fitted coefficient vector supplied through `params`.
 
 | Task | File | Inputs | Fitted coefficients |
 | --- | --- | --- | --- |
@@ -16,10 +15,8 @@ function interface and retains the executable mathematical structure.
 | E. coli Growth | [e_coli_growth.py](mot_sr_llama31/e_coli_growth.py) | `b`, `s`, `temp`, `pH` | `params[0]` through `params[9]` |
 | Stress-Strain | [stress_strain.py](mot_sr_llama31/stress_strain.py) | `strain`, `temp` | `params[0]` through `params[9]` |
 
-The original fitted coefficient vectors for these four benchmark equations
-are currently unavailable. Numerical evaluation requires fitting their
-coefficients on the corresponding training data. Parameter indexing,
-fixed constants, operators and numerical function calls are preserved.
+For numerical evaluation, fit the coefficients on the corresponding
+training data and pass the resulting vector as `params`.
 
 ## EMRI correction
 
@@ -33,13 +30,10 @@ $$
 {1+\eta\exp\!\left(3.318812654787899\,p-11.17336476987488\,e\right)}.
 $$
 
-The expression uses `params[0]`, `params[1]` and `params[2]`. All ten
-supplied parameter values are archived, including the seven entries that
-do not appear in this expression.
-
-Use `p`, `e` and `eta` according to the definitions and units of the EMRI
-data-generation and evaluation pipeline. The implementation reproduces
-the expression above directly.
+The full ten-entry parameter vector is stored in `params.json`. The
+expression uses `params[0]`, `params[1]` and `params[2]`.
+`delta_p_dot` accepts broadcast-compatible inputs `p`, `e` and `eta` and
+evaluates the expression above.
 
 ## Usage
 
