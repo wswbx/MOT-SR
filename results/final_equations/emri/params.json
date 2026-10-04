@@ -1,0 +1,18 @@
+{
+  "equation": "delta_p_dot",
+  "variables": ["p", "e", "eta"],
+  "active_parameter_indices": [0, 1, 2],
+  "params": [
+    3.318812654787899,
+    -11.17336476987488,
+    -3138.3134817337836,
+    0.46344189558754767,
+    0.652276432405609,
+    -0.09656828719277089,
+    -0.9677413934633297,
+    0.7694343703596733,
+    -0.7386844558157266,
+    0.27297654515575154
+  ],
+  "note": "The supplied final expression uses indices 0, 1 and 2. All ten supplied parameter values are preserved."
+}
