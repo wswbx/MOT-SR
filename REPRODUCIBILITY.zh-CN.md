@@ -43,7 +43,7 @@ bash run_motsr.sh
 
 ## 评估与运行日志
 
-候选方程评估的超时时间为 30 秒。十个系数使用单起点 BFGS 拟合，参数为 `maxiter=500`、`gtol=1e-10`、`eps=1e-12`。方程生成请求失败时自动重试。
+候选方程评估的超时时间为 30 秒。十个系数使用 BFGS 拟合。方程生成请求失败时自动重试。
 
 [profile.py](mot_sr/profile.py) 将运行时的候选方程日志写入 `<log_path>/samples/`，记录 `sample_order`、`function` 和 `score`，并生成 TensorBoard 统计信息。
 
