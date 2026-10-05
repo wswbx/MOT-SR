@@ -41,7 +41,7 @@ To use GPT-4o-mini, set the `API_KEY` environment variable and pass `--use_api T
 
 ## Evaluation and runtime logs
 
-Candidate evaluations use a 30-second timeout. Ten coefficients are fitted with single-start BFGS using `maxiter=500`, `gtol=1e-10` and `eps=1e-12`. Equation-generation request failures are retried automatically.
+Candidate evaluations use a 30-second timeout. Ten coefficients are fitted with BFGS. Equation-generation request failures are retried automatically.
 
 [profile.py](mot_sr/profile.py) writes runtime candidate logs to `<log_path>/samples/`, recording `sample_order`, `function` and `score`, along with TensorBoard statistics.
 
