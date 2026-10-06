@@ -23,3 +23,7 @@ prompts, experiment settings, random seeds, API usage and runtime logs.
 The four benchmark equation structures from MOT-SR (LLaMA-3.1) and the
 fitted EMRI correction are available in
 [results/final_equations](results/final_equations/README.md).
+
+## EMRI case generation
+
+EMRI case generation code: [FSI](scripts/emri/generate_fsi_case.py) and [PN5](scripts/emri/generate_pn5_case.py).

@@ -56,4 +56,6 @@ bash run_motsr.sh
 
 ## EMRI 与自动化
 
+EMRI case 生成代码：[FSI](scripts/emri/generate_fsi_case.py) 和 [PN5](scripts/emri/generate_pn5_case.py)。
+
 EMRI 数据集由作者生成。方程搜索、候选筛选、帕累托前沿维护和最终方程选择均自动完成。EMRI 修正项的科学解释由两位领域专家共同作者参与完成。
