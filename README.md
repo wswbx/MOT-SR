@@ -30,3 +30,18 @@ fitted EMRI correction are available in
 ## EMRI case generation
 
 EMRI case generation code: [FSI](scripts/emri/generate_fsi_case.py) and [PN5](scripts/emri/generate_pn5_case.py).
+
+## Citation
+
+```bibtex
+@article{wang2026motsr,
+  title         = {MOT-SR: Multi-Objective Tool-Augmented Scientific Equation Discovery with Large Language Models},
+  author        = {Wang, Boxiao and Wang, Runxiang and Li, Kai and Li, Chongming and Chen, Zhiwei and Zhang, Yifan and Cheng, Jian},
+  journal       = {arXiv preprint arXiv:2607.29561},
+  year          = {2026},
+  eprint        = {2607.29561},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  note          = {Accepted to KDD 2027 (Oral)}
+}
+```
