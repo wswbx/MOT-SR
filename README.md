@@ -2,9 +2,12 @@
 
 Code and reproducibility materials for the paper **“MOT-SR: Multi-Objective Tool-Augmented Symbolic Regression via LLMs”**.
 
-Main Figure:
-
 ![Main Figure](./images/motsr.png)
+
+## News
+
+- **2026-11-13** — MOT-SR is accepted to **KDD 2027** as an **Oral** presentation 🎉
+- **2026-07-31** — Preprint released on [arXiv:2607.29561](https://arxiv.org/abs/2607.29561)
 
 ## Minimal Usage
 
